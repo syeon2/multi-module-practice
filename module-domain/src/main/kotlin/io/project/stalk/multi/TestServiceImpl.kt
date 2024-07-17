@@ -6,5 +6,5 @@ import org.springframework.stereotype.Service
 class TestServiceImpl(
     private val service: ServiceTestRepository,
 ) : TestService {
-    override fun testing(): String = "hello"
+    override fun testing(): String = service.testing()
 }
