@@ -38,6 +38,9 @@ subprojects {
         testImplementation("org.springframework.boot:spring-boot-starter-test")
         testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
         testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+//        implementation("org.springframework.cloud:spring-cloud-starter-bootstrap")
+//        implementation("org.springframework.cloud:spring-cloud-config-client")
     }
 
     kotlin {
@@ -53,6 +56,7 @@ subprojects {
     sourceSets {
         main {
             java.srcDirs("src/main/kotlin", "src/main/java")
+            kotlin.srcDirs("src/main/kotlin", "src/main/kotlin")
         }
     }
 }
