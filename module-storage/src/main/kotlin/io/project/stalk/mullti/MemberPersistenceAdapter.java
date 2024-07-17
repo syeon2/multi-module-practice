@@ -22,7 +22,7 @@ public class MemberPersistenceAdapter implements ServiceTestRepository {
 	@NotNull
 	@Override
 	public String testing() {
-		memberRepository.save(new MemberEntity(1L, "good!!"));
+		memberRepository.save(new MemberEntity(null,"good!!"));
 		return "good";
 	}
 }
