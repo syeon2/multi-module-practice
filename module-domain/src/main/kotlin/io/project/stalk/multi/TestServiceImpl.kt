@@ -13,4 +13,9 @@ class TestServiceImpl(
 
         return service.testing()
     }
+
+    override fun testing(
+        id: Long,
+        name: String,
+    ): Long? = service.testing(id, name)
 }
